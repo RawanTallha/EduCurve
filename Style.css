@@ -1,23 +1,27 @@
 /* NAV BAR */
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    /* Adjust margin to center vertically and horizontally */
+}
+
 nav {
-    list-style-type: none;
-    /* top left under right */
-    margin: 25px 30px 1px 30px;
-    padding: 0;
-    overflow: hidden;
     background-color: #410876;
     border-radius: 10px;
-    height: 60px;
+    width: max-content;
+    display: inline;
+    padding: 0 20px;
 }
 
 li {
-    float: left;
+    display: inline-block;
 }
 
 li a {
     display: block;
     color: rgb(244, 241, 206);
-    line-height: 30px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -31,7 +35,6 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #b261ec;
-    line-height: 30px;
     border-radius: 14px;
     color: white;
 }
@@ -52,7 +55,7 @@ body {
     z-index: 1;
     overflow-x: hidden;
     padding-top: 20px;
-    top: 90px;
+    top: 100px;
     /* Adjusted to account for the navbar */
 }
 
